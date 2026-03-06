@@ -1,46 +1,70 @@
-<!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="utf-8">
-<title>Knowledge Hub 知识中心</title>
+<title>Knowledge Hub（知识中枢）</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f5f7fa;
+text-align:center;
+}
+
+h1{
+margin-top:40px;
+}
+
+.container{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+max-width:900px;
+margin:auto;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+text-decoration:none;
+color:black;
+font-size:18px;
+}
+
+.card:hover{
+background:#f0f3f8;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h1>Knowledge Hub 知识中心</h1>
+<h1>Knowledge Hub（个人知识中枢）</h1>
 
-<p>Personal Knowledge System 个人知识系统</p>
+<p>Personal Knowledge & AI System（个人知识与AI系统）</p>
 
-<hr>
+<div class="container">
 
-<h2>系统架构 System Architecture</h2>
+<a class="card" href="strategy/">Strategy（战略）</a>
 
-<ul>
-<li>Strategy 战略</li>
-<li>Learning 学习</li>
-<li>Professional 专业</li>
-<li>Tools 工具</li>
-<li>Projects 项目</li>
-<li>Infrastructure 基础设施</li>
-</ul>
+<a class="card" href="learning/">Learning（学习）</a>
 
-<hr>
+<a class="card" href="professional/">Professional（专业）</a>
 
-<h2>信息流 Information Flow</h2>
+<a class="card" href="infrastructure/">Infrastructure（基础设施）</a>
 
-<p>
+<a class="card" href="tools/">Tools（工具）</a>
 
-Strategy → Learning → Professional → Projects
+<a class="card" href="projects/">Projects（项目）</a>
 
-</p>
-
-<p>
-Tools support all modules 工具支持所有模块
-</p>
-
-<p>
-Infrastructure supports stability 基础设施保证稳定
-</p>
+</div>
 
 </body>
+
 </html>
